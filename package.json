@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  //for heroku purposes
   "engines": {
     "node": "9.11.1",
     "npm": "6.9.0"
   },
   "scripts": {
-    //on command 
     "start": "node index.js"
   },
   "author": "",
