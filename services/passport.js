@@ -28,9 +28,11 @@ passport.use(
         {
             clientID: keys.googleClientID,         //<- From our keys.js file
             clientSecret: keys.googleClientSecret, //<- From our keys.js file
-            callbackURL: '/auth/google/callback'   //<- When user complies at consent screen, 
+            callbackURL: '/auth/google/callback',   //<- When user complies at consent screen, 
                                                    //   go to this path and include extra code 
                                                    //   as a string query parameter.
+
+            proxy: true
         }, 
 
         // FINAL OAUTH CALLBACK (A)
